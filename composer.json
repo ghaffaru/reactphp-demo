@@ -1,0 +1,14 @@
+{
+    "name": "mac/reactphp-demo",
+    "description": "Demonstrating async php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ghaffaru",
+            "email": "mudashiruagm@gmail.com"
+        }
+    ],
+    "require": {
+        "react/event-loop": "^1.1.1"
+    }
+}
