@@ -3,15 +3,16 @@
 use React\EventLoop\Factory;
 use React\EventLoop\TimerInterface;
 
-require('./vendor/autoload.php');
+require '../vendor/autoload.php';
 
 $loop = Factory::create();
 
 // setTimer equivalent
-$loop->addTimer(1, function () {
-    echo 'After timer';
+$loop->addTimer(3, function () {
+    echo "After timer\n";
 });
 
+echo "Before Timer\n";
 
 // setInterval equivalent
 $counter = 0;
@@ -25,6 +26,6 @@ $loop->addPeriodicTimer(1, function (TimerInterface $timer) use (&$counter, $loo
 
 $loop->run();
 
-echo 'Before Timer';
+
 
 
